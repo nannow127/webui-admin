@@ -1,0 +1,17 @@
+.w {
+  &-auto {
+      width: auto;
+  }
+  @for $i from 0 through 100 {
+      &_#{$i} {
+          width: #{$i}px;
+      }
+  }
+}
+.z-index {
+    @for $i from 0 through 100 {
+        &_#{$i} {
+            z-index: #{$i};
+        }
+    }
+  }
